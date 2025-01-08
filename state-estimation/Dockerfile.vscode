@@ -76,7 +76,7 @@ LABEL org.duckietown.label.module.type="exercise-vscode" \
 COPY --from=recipe assets/vscode/setup.sh /tmp/vscode_setup.sh
 RUN /tmp/vscode_setup.sh
 
-RUN pip3 unistall -y ruamel.yaml
+RUN pip3 uninstall -y ruamel.yaml
 
 # install python libraries
 RUN pip3 install -U \
